@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Butler_Bold;
+    src: url(../fonts/Butler_Bold.otf);
+}
+
+@font-face {
+    font-family: Butler_Regular;
+    src: url(../fonts/Butler_Bold.otf);
+}
+
+@font-face {
+    font-family: Butler_Medium_Stencil;
+    src: url(../fonts/Butler_Medium_Stencil.otf);
+}
+body {
+    padding:0;
+    margin:0;
+}
+.containerOneActive{
+    height: 100vh;
+    width: 100vw;
+    background-color:0F0F0F;
+    overflow: hidden;
+    position: fixed;
+    animation-name: show;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    margin: 0;
+    animation-timing-function: linear;
+    transform-origin: top;
+    opacity: 1;
+}
+
+.containerTwoActive{
+    width:100vw;
+    height : 100vh;
+    background-color:white;
+    overflow: hidden;
+    animation-name: show;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    margin: 0;
+    transform-origin: top;
+    animation-timing-function: linear;
+    position: fixed;
+    opacity: 1;
+}
+
+.containerOneHidden{
+    height: 0vh;
+    width: 100vw;
+    background-color:0F0F0F;
+    overflow: hidden;
+    animation-name: hide;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    transform-origin: top;
+    animation-timing-function: linear;
+    position: fixed;
+    opacity: 0;
+}
+@keyframes hide {
+    from { height: 100vh; opacity: 1}
+    to{ height: 0vh; opacity: 0}
+}
+@keyframes show {
+    from { height: 0vh;opacity: 0}
+    to{ height: 100vh;opacity: 1}
+}
+.containerTwoHidden{
+    width:100vw;
+    height : 0vh;
+    background-color:white;
+    overflow: hidden;
+    animation-name: hide;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    transform-origin: top;
+    position: fixed;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+.logo{
+    // width: 10vw;
+    // height:30vh;
+    margin: 33vh 0 0 45vw;
+    position: fixed;
+    
+}
+
+.pattern{
+    height: 100vh;
+    width: 60vw;
+    margin-left:20vw;
+    position: fixed;
+    z-index: 10;
+}
+
+.subHeading{
+    font-size: 48px;
+    color:#464066;
+    text-align: center;
+    font-family: Butler_Bold;
+    margin-top: 75vh;
+    /* font-weight: bold; */
+}
+.subText{
+    font-size: 18px;
+    color:#B3B3B3;
+    text-align: center;
+    font-family: Butler_Regular;
+    margin-top: 15px;
+    opacity: .5;
+    letter-spacing: .1px;
+    font-weight: lighter;
+}
+
+.buttonTopActive{
+    height: 40px;
+    width: 2px;
+    background-color: lightslategray;
+    margin: 0 0 10px 0;
+    /* position: fixed; */
+
+}
+.buttonDownDisable{
+    height: 40px;
+    width: 2px;
+    background-color:grey;
+    /* position: fixed; */
+
+}
+.wheel{
+    position:fixed;
+    margin:  40vh 0 0 95vw;
+    z-index: 10;
+}
+
+
+/* white content css ************* */
+.patternWhite {
+    height: 90vh;
+    width: 50vw;
+    margin-left:25vw;
+    position: fixed;
+}
+
+.logoWhite {
+    margin: 25vh 0 0 46.8vw;
+    position: fixed;
+}
+
+.whiteContent {
+    margin-top: 48vh;
+    align-items: center;
+}
+.line1 {
+    font-size: 24px;
+    font-family: Butler_Medium_Stencil;
+    color: #464066;
+    text-align: center;
+}
+
+.line2 {
+    font-size: 48px;
+    font-family: Butler_Medium_Stencil;
+    color: #333333;
+    text-align: center;    
+}
+.line3 {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #6D6D6D;
+    text-align: center; 
+}
+.line4 {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #6D6D6D;
+    text-align: center;    
+}
+
+.mailBox {
+    width: 160px;
+    border: 1.5px solid rgba(102, 102, 102, .5);
+    text-align: center;
+    padding: 10px;
+    word-spacing: 5px;
+    margin: 5vh 0 0 44vw;
+    color: #666666;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.mailImage {
+    width: 15px;
+    height: 15px;
+    font-family: sans-serif;
+}
+
+.horizontalLine {
+    width: 30vw;
+    background-color: #6d6d6d;
+    height: .7px;
+    // border: .4px solid #6D6D6D;
+    margin: 45px 0 0 35vw;
+    opacity: .3;
+}
+
+.socialLink {
+    width: 20vw;
+    margin: 45px 0 0 37.5vw;
+}
+
+.socialImage {
+    width: 20px;
+    height: 20px;
+    margin-left: 5vw;
+}
+/* ****************END************* */
